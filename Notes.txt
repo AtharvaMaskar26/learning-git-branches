@@ -22,3 +22,12 @@ git status
 # PUBLISHING A NEW BRANCH 
 git push -u origin renamed-feature-one
 -u gives us the tracking feature
+
+# Creating a local branch and tracking the remote branch 
+git branch --track feature/login origin/feature/login
+
+# Pulling and pushing branches 
+git pull
+git push 
+
+git branch -v
