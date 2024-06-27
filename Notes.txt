@@ -1,0 +1,47 @@
+1. You can have many side branches, but you can only have 1 master branch
+
+# CREATE NEW BRANCH 
+git branch branch-name
+
+# Show all branches
+git branch -a
+
+# SWITCHING BRANCHES 
+git checkout other-branch-name
+git switch other-branch-name
+
+#Status
+git status
+
+# Renaming branches 
+- git branch -m new-name
+
+- rename unactive branch 
+- git branch -m feature-one renamed-feature-one
+
+# PUBLISHING A NEW BRANCH 
+git push -u origin renamed-feature-one
+-u gives us the tracking feature
+
+# Creating a local branch and tracking the remote branch 
+git branch --track feature/login origin/feature/login
+
+# Pulling and pushing branches 
+git pull
+git push 
+
+# Check updates of which branch is ahead of behind
+git branch -v
+
+# Deleting branch 
+Not all branches are meant to be for forever, feel free to delete them from time to time, you cannot delete the current active branch 
+
+Deleting from local codebase, do this if you wanna delete all updates made
+git branch -d renamed-feature-one
+
+If you're removing from the branch from your repo you should also delete it from local, to avoid a messy code base. 
+
+git push origin --delete renamed-feature-one
+
+
+# Merging branches 
