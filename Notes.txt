@@ -1,0 +1,24 @@
+1. You can have many side branches, but you can only have 1 master branch
+
+# CREATE NEW BRANCH 
+git branch branch-name
+
+# Show all branches
+git branch -a
+
+# SWITCHING BRANCHES 
+git checkout other-branch-name
+git switch other-branch-name
+
+#Status
+git status
+
+# Renaming branches 
+- git branch -m new-name
+
+- rename unactive branch 
+- git branch -m feature-one renamed-feature-one
+
+# PUBLISHING A NEW BRANCH 
+git push -u origin renamed-feature-one
+-u gives us the tracking feature
